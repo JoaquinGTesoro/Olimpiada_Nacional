@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Colus;
+    src: url('Colus-Regular.eot');
+    src: url('Colus-Regular.eot') format('embedded-opentype'),
+    url('Colus-Regular.woff2') format('woff2'), 
+    url('Colus-Regular.woff') format('woff'),
+    url('Colus-Regular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --clr-100: #FFF;
+    --clr-400: #FFD65C;
+    --clr-450: #fdcf46;
+    --clr-500: #FFA64D;
+    --clr-700: #1A2B4A;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Colus', serif;
+    font-size: 1.5em;
+    color: var(--clr-700);
+}
+
+header {
+    width: 100%;
+    /* height: 3em; */
+    background-color: var(--clr-400);
+    align-items: center;
+    justify-content: center;
+    padding: .25em 1em;
+}
+
+.logo {
+    height: 2.5em;
+}
+
+
+.btn {
+    padding: 1rem 0;
+    width: 13em;
+    background-color: var(--clr-400);
+    border: 2px solid var(--clr-500);
+    border-radius: 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--clr-700);
+    display: inline-block;
+    transition: all 150ms ease-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: var(--clr-450);
+}
+
+.split-column {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,77 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 4em);
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+h1 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-700);
+    /* background-color: var(--clr-400); */
+}
+
+.titulo {
+    background-color: var(--clr-400);
+    width: 100%;
+    padding: .25em 0;
+}
+
+.tabla {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+.tabla th,
+.tabla td {
+    padding: .5em;
+    border: .5px solid var(--clr-400);
+}
+
+.tabla td {
+    cursor: pointer;
+}
+
+.btns-saltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.btn {
+    font-size: 1em;
+    width: 7em;
+    padding: .5em 1em;
+}
+
+.btn-select {
+    font-size: 1rem;
+    width: 7em;
+    padding: .25em .5em;
+    border: 2px solid var(--clr-700);
+    background-color: transparent;
+}
+
+.hoy {
+    background-color: var(--clr-400);
+}

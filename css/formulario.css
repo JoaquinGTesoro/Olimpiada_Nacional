@@ -1,0 +1,71 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 4em);
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+h1 {
+    margin: 1em 0;
+    text-align: center;
+}
+
+form {
+    margin: 1.5em 0;
+    color: var(--clr-700);
+    font-size: 1em;
+}
+
+form label {
+    text-align: start;
+}
+
+form > * + * {
+    margin-top: 1.5em;
+}
+
+form input,
+form select,
+form textarea {
+    background-color: transparent;
+    border: 2px solid var(--clr-400);
+    border-radius: 5px;
+    font-size: inherit;
+    padding: .5rem;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+}
+
+.form-container > * + * {
+    margin-top: 1em;
+}
+
+.form-br {
+    flex-direction: column;
+}
+
+.form-br label {
+    align-self: flex-start;
+}
+
+.form-il {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.btn {
+    margin-top: 1.5em;
+    width: 10em;
+}
