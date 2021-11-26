@@ -1,3 +1,4 @@
+<!-- Poner el codigo dinamicamente con PHP o sacar el input -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -43,7 +44,7 @@
 			<div class="form-container form-il">
 				<label for="codigo">Código:</label>
 				<!-- Codigo de leche identifica la entrada, despues se suma y se form-container forma el lote en otra tabla y se vinculan ambas (Al generar el final del dia el numero de lote se recorre la tabla y todas en las que coincidan la fecha se les asigna el numero de lote generado al final del dia) -->
-				<input type="number" name="codigo" min="0">
+				<input type="number" name="codigo" min="0" readonly>
 			</div>
 		  <div class="form-container form-il">
 			  <label for="litros-leche">Litros:</label>
@@ -55,7 +56,7 @@
 			</div>
 		  <div class="form-container form-il">
 			  <label for="temperatura">Temperatura(C°):</label>
-			  <input type="number" name="temperatura">
+			  <input type="number" name="temperatura" step="0.1">
 		  </div>
 		  <div class="form-container form-il">
 			  <label for="densidad">Densidad(g/ml): </label>
@@ -63,7 +64,7 @@
 		  </div>
 		  <div class="form-container form-il">
 			  <label for="alcohol">Alcohol(%):</label>
-			  <input type="number" name="alcohol" id="">
+			  <input type="number" name="alcohol" id="" step="0.01">
 		  </div>
 		  <div class="form-container form-br">
 			  <label for="sensorial">Sensorial:</label>
